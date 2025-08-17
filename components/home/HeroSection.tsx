@@ -36,7 +36,7 @@ export default function HeroSection() {
       </div>
 
       <div className='relative z-10 bg-emerald-600 py-6 lg:max-w-[90%] ms-auto rounded-s-md'>
-        <div className='container mx-auto px-4'>
+        <div className='container max-w-6xl mx-auto px-4'>
           <div className='grid grid-cols-1 md:grid-cols-6 gap-4 items-end'>
             <div className='space-y-2'>
               <label className='text-white text-sm font-medium'>Check In</label>

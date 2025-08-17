@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section className='py-20 bg-[#E9F0EC]'>
       <div className='container max-w-6xl mx-auto px-4'>
-        <div className='flex items-center justify-center gap-12 lg:gap-24 flex-col md:flex-row-reverse'>
+        <div className='flex items-center justify-center gap-12 lg:gap-24 flex-col-reverse md:flex-row'>
           <div className='relative w-full lg:w-[700px] max-w-[700px] h-full lg:h-[560px]'>
             <Image
               src='/placeholder.svg'
