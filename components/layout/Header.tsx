@@ -1,0 +1,109 @@
+import {
+  Search,
+  Menu,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Building2,
+  MoveUpRight,
+} from "lucide-react";
+
+export default function Header() {
+  return (
+    <>
+      <div className='text-white py-2 px-4 bg-transparent fixed inset-x-0 top-0 z-50'>
+        <div className='container mx-auto flex items-center justify-between text-sm'>
+          <div className='flex items-center space-x-6'>
+            <div className='flex items-center gap-1'>
+              <div className='size-1.5 rounded-full bg-yellow-400' />
+              <span>7631 Sabrina Park, TN Devon 3rd, USA</span>
+            </div>
+            <div className='flex items-center gap-1'>
+              <div className='size-1.5 rounded-full bg-yellow-400' />
+              <span>info@domain.com</span>
+            </div>
+            <div className='flex items-center gap-1'>
+              <div className='size-1.5 rounded-full bg-yellow-400' />
+              <span>(+1) 987 654 3210</span>
+            </div>
+          </div>
+          <div className='flex items-center space-x-3'>
+            <Facebook className='w-4 h-4 hover:text-yellow-400 cursor-pointer' />
+            <Twitter className='w-4 h-4 hover:text-yellow-400 cursor-pointer' />
+            <Instagram className='w-4 h-4 hover:text-yellow-400 cursor-pointer' />
+            <Linkedin className='w-4 h-4 hover:text-yellow-400 cursor-pointer' />
+          </div>
+        </div>
+      </div>
+
+      <header className='bg-white shadow-sm relative z-50'>
+        <div className='container mx-auto px-4 py-4'>
+          <div className='flex items-center justify-between'>
+            <div className='flex items-center space-x-2'>
+              <Building2 className='w-8 h-8 text-emerald-600 rounded flex items-center justify-center' />
+              <span className='text-gray-800 font-bold text-xl'>Fixyland</span>
+            </div>
+
+            <nav className='hidden md:flex items-center space-x-8'>
+              <div className='flex items-center space-x-1'>
+                <a
+                  href='#'
+                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                >
+                  Home
+                </a>
+              </div>
+              <div className='flex items-center space-x-1'>
+                <a
+                  href='#'
+                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                >
+                  Pages
+                </a>
+              </div>
+              <div className='flex items-center space-x-1'>
+                <a
+                  href='#'
+                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                >
+                  Rooms & Suites
+                </a>
+              </div>
+              <div className='flex items-center space-x-1'>
+                <a
+                  href='#'
+                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                >
+                  Services
+                </a>
+              </div>
+              <div className='flex items-center space-x-1'>
+                <a
+                  href='#'
+                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                >
+                  Blog
+                </a>
+              </div>
+              <a
+                href='#'
+                className='text-gray-700 hover:text-emerald-600 transition-colors'
+              >
+                Contact
+              </a>
+            </nav>
+
+            <div className='flex items-center space-x-4'>
+              {/* <Search className='w-5 h-5 text-gray-600 cursor-pointer' />
+              <Menu className='w-5 h-5 text-gray-600 cursor-pointer ' /> */}
+              <button className='bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 h-12 flex items-center gap-2 rounded-md cursor-pointer'>
+                Book Your Stay <MoveUpRight className='w-4 h-4 text-black' />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </>
+  );
+}
