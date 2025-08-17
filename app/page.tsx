@@ -1,7 +1,9 @@
+import { HeroSection } from "@/components/home";
+
 export default function Home() {
   return (
     <main className='min-h-screen'>
-      <h1>Setup</h1>
+      <HeroSection />
     </main>
   );
 }

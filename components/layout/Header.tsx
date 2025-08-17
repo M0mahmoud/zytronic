@@ -11,8 +11,8 @@ import {
 
 export default function Header() {
   return (
-    <>
-      <div className='text-white py-2 px-4 bg-transparent fixed inset-x-0 top-0 z-50'>
+    <div className='absolute inset-x-0 top-0 z-50'>
+      <div className='text-white py-2 px-4 bg-emerald-600'>
         <div className='container mx-auto flex items-center justify-between text-sm'>
           <div className='flex items-center space-x-6'>
             <div className='flex items-center gap-1'>
@@ -37,19 +37,19 @@ export default function Header() {
         </div>
       </div>
 
-      <header className='bg-white shadow-sm relative z-50'>
+      <header className='relative z-50'>
         <div className='container mx-auto px-4 py-4'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center space-x-2'>
               <Building2 className='w-8 h-8 text-emerald-600 rounded flex items-center justify-center' />
-              <span className='text-gray-800 font-bold text-xl'>Fixyland</span>
+              <span className='text-white font-bold text-xl'>Fixyland</span>
             </div>
 
             <nav className='hidden md:flex items-center space-x-8'>
               <div className='flex items-center space-x-1'>
                 <a
                   href='#'
-                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                  className='text-white hover:text-emerald-600 transition-colors'
                 >
                   Home
                 </a>
@@ -57,7 +57,7 @@ export default function Header() {
               <div className='flex items-center space-x-1'>
                 <a
                   href='#'
-                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                  className='text-white hover:text-emerald-600 transition-colors'
                 >
                   Pages
                 </a>
@@ -65,7 +65,7 @@ export default function Header() {
               <div className='flex items-center space-x-1'>
                 <a
                   href='#'
-                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                  className='text-white hover:text-emerald-600 transition-colors'
                 >
                   Rooms & Suites
                 </a>
@@ -73,7 +73,7 @@ export default function Header() {
               <div className='flex items-center space-x-1'>
                 <a
                   href='#'
-                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                  className='text-white hover:text-emerald-600 transition-colors'
                 >
                   Services
                 </a>
@@ -81,14 +81,14 @@ export default function Header() {
               <div className='flex items-center space-x-1'>
                 <a
                   href='#'
-                  className='text-gray-700 hover:text-emerald-600 transition-colors'
+                  className='text-white hover:text-emerald-600 transition-colors'
                 >
                   Blog
                 </a>
               </div>
               <a
                 href='#'
-                className='text-gray-700 hover:text-emerald-600 transition-colors'
+                className='text-white hover:text-emerald-600 transition-colors'
               >
                 Contact
               </a>
@@ -104,6 +104,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 }
