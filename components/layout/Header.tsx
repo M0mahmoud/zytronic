@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div className='absolute inset-x-0 top-0 z-50 bg-emerald-600 md:bg-transparent'>
       <div className='text-white py-2 px-4 bg-emerald-600  hidden md:block'>
-        <div className='container mx-auto max-w-7xl flex items-center justify-between text-sm'>
+        <div className='container mx-auto px-4 flex items-center justify-between text-sm'>
           <div className='items-center space-x-6 flex'>
             <div className='flex items-center gap-1'>
               <div className='size-1.5 rounded-full bg-yellow-400' />

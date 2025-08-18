@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
+import SectionHeader from "../ui/SectionHeader";
 
 export default function AboutSection() {
   return (
@@ -39,15 +40,16 @@ export default function AboutSection() {
           </div>
 
           <div className='w-full'>
-            <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit'>
-              ABOUT FIXYLAND
-            </p>
-
-            <h2 className='text-4xl font-bold text-gray-900 mb-6'>
-              World Class Luxury Hotel
-              <br />
-              and Resort Near City
-            </h2>
+            <SectionHeader
+              subtitle='ABOUT FIXYLAND'
+              title={
+                <>
+                  World Class Luxury Hotel
+                  <br />
+                  and Resort Near City
+                </>
+              }
+            />
 
             <p className='text-gray-600 mb-8 leading-relaxed'>
               There are many variations of passages of Lorem Ipsum available,

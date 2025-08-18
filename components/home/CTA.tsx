@@ -10,6 +10,7 @@ export default function CTA() {
             <div className='absolute inset-0 bg-black/35 pointer-events-none' />
             {Array.from({ length: 5 }).map((_, index) => (
               <Image
+                key={index}
                 src={`/rooms/room-${index + 1}.png`}
                 alt={`Hero Image ${index + 1}`}
                 width={350}

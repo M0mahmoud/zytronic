@@ -10,6 +10,7 @@ import {
 import { Button } from "../ui/Button";
 import { Users, Bed, Bath, ArrowRight, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import SectionHeader from "../ui/SectionHeader";
 
 const ROOMS = [
   {
@@ -73,16 +74,16 @@ export default function RoomsCarousel() {
   return (
     <section className='py-16 bg-[#E9F0EC]'>
       <div className='container max-w-7xl mx-auto'>
-        <div className='text-center mb-12'>
-          <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit mx-auto'>
-            ABOUT FIXYLAND
-          </p>
-          <h2 className='text-4xl font-bold text-gray-900 mb-6'>
-            The Best Luxury Rooms And
-            <br />
-            Suites
-          </h2>
-        </div>
+        <SectionHeader
+          subtitle='ABOUT FIXYLAND'
+          title={
+            <>
+              The Best Luxury Rooms And
+              <br />
+              Suites
+            </>
+          }
+        />
 
         {/* Carousel */}
         <div className='relative'>

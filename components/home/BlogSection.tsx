@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/Button";
 import Image from "next/image";
 import { ArrowUpRight, Calendar, User } from "lucide-react";
+import SectionHeader from "../ui/SectionHeader";
 
 export default function BlogSection() {
   const posts = [
@@ -37,20 +38,17 @@ export default function BlogSection() {
   return (
     <section className='py-20 bg-gray-100'>
       <div className='container max-w-7xl mx-auto px-4'>
-        <div className='text-center mb-16'>
-          <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit mx-auto'>
-            ABOUT FIXYLAND
-          </p>
-          <h2 className='text-4xl font-bold text-gray-900 mb-4'>
-            Get More Update For
-            <br />
-            Playland
-          </h2>
-          <p className='text-gray-600 max-w-2xl mx-auto'>
-            Stay updated with the latest news, offers, and insights from our
-            luxury hotel.
-          </p>
-        </div>
+        <SectionHeader
+          subtitle='ABOUT FIXYLAND'
+          title={
+            <>
+              Get More Update For
+              <br />
+              Playland
+            </>
+          }
+          description='Stay updated with the latest news, offers, and insights from our luxury hotel.'
+        />
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
           {posts.map((post, index) => (

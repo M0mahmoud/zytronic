@@ -1,21 +1,22 @@
 import Image from "next/image";
 import { Button } from "../ui/Button";
 import { ArrowUpRight } from "lucide-react";
+import SectionHeader from "../ui/SectionHeader";
 
 export default function OffersSection() {
   return (
     <section className='py-20 bg-gray-100'>
       <div className='container max-w-7xl mx-auto px-4'>
-        <div className='text-center mb-16'>
-          <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit text-center mx-auto'>
-            ABOUT FIXYLAND
-          </p>
-          <h2 className='text-4xl font-bold text-gray-900 mb-4'>
-            Special Discount for Hotel &
-            <br />
-            Resort Booking
-          </h2>
-        </div>
+        <SectionHeader
+          subtitle='ABOUT FIXYLAND'
+          title={
+            <>
+              Special Discount for Hotel &
+              <br />
+              Resort Booking
+            </>
+          }
+        />
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           {Array.from({ length: 2 }).map((_, index) => (
