@@ -1,5 +1,6 @@
 import {
   AboutSection,
+  CTA,
   HeroSection,
   OffersSection,
   ServicesSection,
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesSection />
       <VideoSection />
       <OffersSection />
+      <CTA />
     </main>
   );
 }
