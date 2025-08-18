@@ -1,6 +1,7 @@
 import {
   AboutSection,
   HeroSection,
+  OffersSection,
   ServicesSection,
   VideoSection,
 } from "@/components/home";
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <VideoSection />
+      <OffersSection />
     </main>
   );
 }
