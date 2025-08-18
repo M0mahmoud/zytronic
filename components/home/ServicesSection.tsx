@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function ServicesSection() {
   return (
     <section className='py-20 bg-gray-50'>
-      <div className='container max-w-6xl mx-auto px-4'>
+      <div className='container max-w-7xl mx-auto px-4'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-start'>
           <div>
-            <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-md p-2 w-fit shadow'>
+            <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit shadow'>
               ABOUT FIXYLAND
             </p>
             <h2 className='text-4xl font-bold text-gray-900 mb-6'>

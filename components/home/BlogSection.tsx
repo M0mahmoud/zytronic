@@ -36,9 +36,9 @@ export default function BlogSection() {
 
   return (
     <section className='py-20 bg-gray-100'>
-      <div className='container max-w-6xl mx-auto px-4'>
+      <div className='container max-w-7xl mx-auto px-4'>
         <div className='text-center mb-16'>
-          <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-md p-2 w-fit mx-auto'>
+          <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit mx-auto'>
             ABOUT FIXYLAND
           </p>
           <h2 className='text-4xl font-bold text-gray-900 mb-4'>
@@ -59,12 +59,12 @@ export default function BlogSection() {
                 <Image
                   src={post.image || "/placeholder.svg"}
                   alt={post.title}
-                  className='w-full h-48 object-cover rounded-md'
+                  className='w-full h-48 object-cover rounded-xl'
                   width={500}
                   height={300}
                   loading='lazy'
                 />
-                <div className='absolute top-2 left-4 bg-emerald-500 rounded-md'>
+                <div className='absolute top-2 left-4 bg-emerald-500 rounded-xl'>
                   <p className='text-white text-xs font-semibold px-2 py-1'>
                     {post.tag}
                   </p>

@@ -5,9 +5,9 @@ import { ArrowUpRight } from "lucide-react";
 export default function OffersSection() {
   return (
     <section className='py-20 bg-gray-100'>
-      <div className='container max-w-6xl mx-auto px-4'>
+      <div className='container max-w-7xl mx-auto px-4'>
         <div className='text-center mb-16'>
-          <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-md p-2 w-fit text-center mx-auto'>
+          <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit text-center mx-auto'>
             ABOUT FIXYLAND
           </p>
           <h2 className='text-4xl font-bold text-gray-900 mb-4'>

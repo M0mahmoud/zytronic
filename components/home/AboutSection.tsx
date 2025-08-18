@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 export default function AboutSection() {
   return (
     <section className='py-20 bg-[#E9F0EC]'>
-      <div className='container max-w-6xl mx-auto px-4'>
+      <div className='container max-w-7xl mx-auto px-4'>
         <div className='flex items-center justify-center gap-12 lg:gap-24 flex-col-reverse md:flex-row'>
           <div className='relative w-full lg:w-[700px] max-w-[700px] h-full lg:h-[560px]'>
             <Image
@@ -39,7 +39,7 @@ export default function AboutSection() {
           </div>
 
           <div className='w-full'>
-            <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-md p-2 w-fit'>
+            <p className='text-sm text-emerald-600 font-semibold mb-4 tracking-wide bg-white rounded-xl p-2 w-fit'>
               ABOUT FIXYLAND
             </p>
 

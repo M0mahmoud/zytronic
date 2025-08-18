@@ -6,6 +6,7 @@ import {
   OffersSection,
   ServicesSection,
   VideoSection,
+  RoomsCarousel,
 } from "@/components/home";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <RoomsCarousel />
       <VideoSection />
       <OffersSection />
       <BlogSection />

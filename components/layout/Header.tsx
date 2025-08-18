@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div className='absolute inset-x-0 top-0 z-50 bg-emerald-600 md:bg-transparent'>
       <div className='text-white py-2 px-4 bg-emerald-600  hidden md:block'>
-        <div className='container mx-auto max-w-6xl flex items-center justify-between text-sm'>
+        <div className='container mx-auto max-w-7xl flex items-center justify-between text-sm'>
           <div className='items-center space-x-6 flex'>
             <div className='flex items-center gap-1'>
               <div className='size-1.5 rounded-full bg-yellow-400' />
@@ -94,7 +94,7 @@ export default function Header() {
             </nav>
 
             <div className='items-center space-x-4 hidden md:flex'>
-              <button className='bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 h-12 flex items-center gap-2 rounded-md cursor-pointer'>
+              <button className='bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 h-12 flex items-center gap-2 rounded-xl cursor-pointer'>
                 Book Your Stay <MoveUpRight className='w-4 h-4 text-black' />
               </button>
             </div>
